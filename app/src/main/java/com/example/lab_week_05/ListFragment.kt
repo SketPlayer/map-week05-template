@@ -12,7 +12,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.toObject
 
-class ListFragment : Fragment() {
+class ListFragment : BaseAuthFragment() {
     private lateinit var db: FirebaseFirestore
     private lateinit var coffeeListView: ListView
     private lateinit var coffeeAdapter: ArrayAdapter<String>

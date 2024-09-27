@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.firestore.FirebaseFirestore
 
-class InsertFragment : Fragment() {
+class InsertFragment : BaseAuthFragment() {
     private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
